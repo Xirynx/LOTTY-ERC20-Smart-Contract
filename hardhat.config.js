@@ -3,4 +3,13 @@ require("@nomicfoundation/hardhat-toolbox");
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.18",
+  networks: {
+	hardhat: {
+	  forking: {
+		url: "https://eth-mainnet.g.alchemy.com/v2/4q3ibpZAmuNwzwuZyOqwEWSk9BDDS1Fz",
+		blockNumber: 17500692,
+		gas: 100_000
+	  }
+	}
+  }
 };
